@@ -80,18 +80,8 @@
  text-align: center;
  color: #fff;
  font-size: 4vw;
-}
-.c-hamburger__menuItem:nth-of-type(5) {
- margin-bottom: 8vh;
-}
-.c-hamburger__menuItem:nth-of-type(5) a {
- color: #015700;
- background-color: #fff;
- border-radius: 15px;
- padding: 10px 15px;
-}
-.c-hamburger__menuItem:not(:nth-of-type(5)) {
  margin-bottom: 7vh;
+ list-style: none;
 }
 .c-hamburger__menu--close {
  display: block;
@@ -134,14 +124,17 @@
 .c-hamburger__menu.is-active{
  transform: translateX(0);
 }
+
 /* hero */
 .l-hero {
   position: absolute;
-  top: 40%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
 }
 .l-hero__title {
-  font-size: 5vw;
+  font-size: 6vw;
   color: #fff;
 }
 
@@ -185,5 +178,6 @@
    padding: 50px 20px 25px 20px;
    justify-content: center;
    gap: 5%;
+   list-style: none;
  }
 }

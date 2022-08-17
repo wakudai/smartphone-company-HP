@@ -48,10 +48,10 @@ body {
 
 /* Remove list styles on ul, ol elements with a class attribute */
 /* class属性を持つul、ol要素のリストスタイルを削除 */
-ul[class],
+/* ul[class],
 ol[class] {
   list-style: none;
-}
+} */
 
 /* A elements that don't have a class get default styles */
 /* classを持たない要素はデフォルトのスタイルを取得 */

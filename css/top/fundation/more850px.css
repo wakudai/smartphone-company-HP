@@ -29,6 +29,7 @@
    text-align: center;
    color: #3AABD2;
    text-shadow: #000 3px 0px;
+   list-style: none;
  }
  .l-header__listItem img {
    width: 25%;
@@ -87,6 +88,7 @@
    padding: 50px 20px 25px 20px;
    justify-content: center;
    gap: 5%;
+   list-style: none;
  }
 
 }
