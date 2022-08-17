@@ -1,7 +1,7 @@
 /* style */
-@import '../../css/home/fundation/style.css';
-@import '../../css/home/fundation/more850px.css';
-@import '../../css/home/fundation/less849px.css';
+@import '../../css/message/fundation/style.css';
+@import '../../css/message/fundation/more850px.css';
+@import '../../css/message/fundation/less849px.css';
 
 /* Reset css */
 @import '../foundation/_reset.css';
