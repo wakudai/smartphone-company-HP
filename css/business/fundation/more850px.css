@@ -1,0 +1,134 @@
+@media only screen and (min-width: 850px){
+/* firstView */
+.l-business__firstView {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(../../../images/kate-trysh-034iotpHHds-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+  background-size: cover;
+}
+/* header */
+ .c-hamburger {
+  display: none;
+ }
+
+ .l-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+ }
+ .l-header__title {
+   font-size: 4vw;
+   width: 50%;
+   color: #3AABD2;
+   text-shadow: #000000 3px 0px;
+ }
+ .l-header__list {
+   display: flex;
+   font-size: 1.5vw;
+   width: 50%;
+   text-align: center;
+   color: #3AABD2;
+   text-shadow: #000 1px 0px;
+   list-style: none;
+ }
+ .l-header__listItem img {
+   width: 25%;
+   margin: 0 auto;
+   filter: drop-shadow(#000 2px 0px);
+ }
+
+ /* hero */
+.l-business__hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.l-business__Herotitle {
+  font-size: 5vw;
+  color: #fff;
+}
+.l-business__Herosubtitle {
+  font-size: 3vw;
+  color: #fff;
+}
+
+/* 事業内容 */
+.p-business__content {
+  border: solid 3px #3AABD2;
+  margin: 10% 5%;
+  padding: 3%;
+}
+.p-business__desc {
+  margin-bottom: 3%;
+  padding: 2% 0;
+}
+.p-business__feature {
+  text-align: center;
+  border-bottom: #3AABD2 solid 2px;
+  width: 40%;
+  margin: 0 auto;
+  color: #3AABD2;
+}
+.p-business__titile {
+  font-size: 2vw;
+  margin-bottom: 1%;
+}
+.p-business__Subtitle {
+  font-size: 1.5vw;
+  margin-bottom: 1%;
+}
+.p-business__info {
+  text-align: center;
+}
+.p-business__text {
+  margin-top: 3%;
+  font-size: 1.5vw;
+}
+.p-business__summary {
+  padding: 2%;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.p-business__list {
+  width: 40%;
+  list-style: disc;
+  font-size: 1.5vw;
+}
+.p-business__Listtitle {
+  background-color: #3AABD2;
+  border-radius: 20px;
+  padding: 5%;
+  text-align: center;
+  color: #fff;
+}
+.p-business__item {
+  margin: 15% 0;
+}
+
+ /* footer */
+ .l-footer {
+   border-top: 1px solid #000000;
+   text-align: center;
+   color: #fff;
+   font-size: 1.5vw;
+   font-weight: 700;
+   padding-bottom: 15px;
+   background-color: #3AABD2;
+ }
+ .l-footer__list {
+   display: flex;
+   padding: 50px 20px 25px 20px;
+   justify-content: center;
+   gap: 5%;
+   list-style: none;
+ }
+
+}
