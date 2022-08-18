@@ -1,0 +1,132 @@
+@media only screen and (min-width: 850px){
+/* firstView */
+.l-thanks__firstView {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(../../../images/緑とクリーム色\ 植物ボーダー\ 素朴な花柄\ 結婚式\ サンキュカード.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.l-thanks__message {
+  position: absolute;
+  font-size: 5vw;
+  color: #fff;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.l-thanks__group{
+  text-align: center;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.l-thanks__text {
+  margin: 2% 0;
+  font-size: 1.5vw;
+  color: #fff;
+}
+
+/* TOPに戻る */
+.l-return {
+  position: absolute;
+  font-size: 2vw;
+  color: #fff;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.l-return:hover {
+  color: #000;
+}
+
+/* header */
+ .c-hamburger {
+  display: none;
+ }
+
+ .l-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+ }
+ .l-header__title {
+   font-size: 4vw;
+   width: 50%;
+   color: #3AABD2;
+   text-shadow: #000000 3px 0px;
+ }
+ .l-header__list {
+   display: flex;
+   font-size: 1.5vw;
+   width: 50%;
+   text-align: center;
+   color: #3AABD2;
+   text-shadow: #000 3px 0px;
+   list-style: none;
+ }
+ .l-header__listItem img {
+   width: 25%;
+   margin: 0 auto;
+   filter: drop-shadow(#000 3px 0px);
+ }
+.l-hero {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+.l-hero__title {
+  font-size: 5vw;
+  color: #fff;
+}
+
+/* main */
+.p-global {
+  width: 100vw;
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.p-global__content {
+  border: solid 3px #3AABD2;
+}
+.p-global__img {
+  width: 25vmax;
+  height: 25vmax;
+}
+.p-global__icon {
+  width: 10vmax;
+  height: 10vmax;
+  margin: 20px auto;
+}
+.l-global__text {
+  color: #3AABD2;
+  font-size: 1.5vw;
+  text-align: center;
+  margin: 20px 0;
+}
+
+ /* footer */
+ .l-footer {
+   border-top: 1px solid #000000;
+   text-align: center;
+   color: #fff;
+   font-size: 1.5vw;
+   font-weight: 700;
+   padding-bottom: 15px;
+   background-color: #3AABD2;
+ }
+ .l-footer__list {
+   display: flex;
+   padding: 50px 20px 25px 20px;
+   justify-content: center;
+   gap: 5%;
+   list-style: none;
+ }
+
+}
