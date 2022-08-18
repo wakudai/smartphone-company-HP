@@ -1,0 +1,168 @@
+@media only screen and (min-width: 850px){
+/* firstView */
+.l-contact__firstView {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(../../../images/airplane-paper-gc6f8bdd93_1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* header */
+ .c-hamburger {
+  display: none;
+ }
+
+ .l-header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+ }
+ .l-header__title {
+   font-size: 4vw;
+   width: 50%;
+   color: #3AABD2;
+   text-shadow: #000000 3px 0px;
+ }
+ .l-header__list {
+   display: flex;
+   font-size: 1.5vw;
+   width: 50%;
+   text-align: center;
+   color: #3AABD2;
+   text-shadow: #000 1px 0px;
+   list-style: none;
+ }
+ .l-header__listItem img {
+   width: 25%;
+   margin: 0 auto;
+   filter: drop-shadow(#000 2px 0px);
+ }
+
+ /* hero */
+.l-contact__hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.l-contact__Herotitle {
+  font-size: 5vw;
+  color: #fff;
+}
+.l-contact__Herosubtitle {
+  font-size: 3vw;
+  color: #fff;
+}
+
+/* お問い合わせ */
+.p-contact__content {
+  border: solid 3px #3AABD2;
+  margin: 10% 5%;
+  padding: 3%;
+}
+.p-contact__desc {
+  padding: 2% 0;
+}
+.p-contact__feature {
+  text-align: center;
+  border-bottom: #3AABD2 solid 2px;
+  width: 40%;
+  margin: 0 auto;
+  color: #3AABD2;
+}
+.p-contact__titile {
+  font-size: 2vw;
+  margin-bottom: 1%;
+}
+.p-contact__Subtitle {
+  font-size: 1.5vw;
+  margin-bottom: 1%;
+}
+
+/* form */
+.p-contact__form {
+  margin: 5% 0;
+}
+.p-form {
+  width: 50vw;
+  margin: 0 auto;
+}
+.p-form__item {
+  font-size: 1.5vw;
+  padding: 20px 0;
+}
+.p-form__label {
+  margin-bottom: 1%;
+}
+.p-form__required {
+  display: inline-block;
+  text-align: center;
+  background: #cc1c0c;
+  color: #fff;
+  font-weight: 300;
+  width: 5vw;
+  padding: 3px 10px;
+  margin-left: 10px;
+}
+.p-form__datail {
+  font-size: 1vw;
+}
+.p-form__input {
+  width: 95%;
+  height: 70px;
+  border: solid 1px;
+}
+.p-form__error {
+  display: none;
+  margin-top: 5px;
+  color: #cc1c0c;
+}
+.p-form__input:invalid:focus + .p-form__error {
+  display: block;
+}
+.p-form__textarea {
+  border: 1px solid;
+  flex: 1;
+  width: 95%;
+  height: 30vmax;
+}
+.p-form__btn {
+  border: none;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #3AABD2;
+  color: #fff;
+  box-shadow: 0px 3px 4px #c0c0c0;
+  font-size: 1.6em;
+  padding: 20px 0;
+  margin: 20px 0;
+  width: 95%;
+}
+.p-form__btn:hover {
+  opacity: 0.6;
+}
+
+ /* footer */
+ .l-footer {
+   border-top: 1px solid #000000;
+   text-align: center;
+   color: #fff;
+   font-size: 1.5vw;
+   font-weight: 700;
+   padding-bottom: 15px;
+   background-color: #3AABD2;
+ }
+ .l-footer__list {
+   display: flex;
+   padding: 50px 20px 25px 20px;
+   justify-content: center;
+   gap: 5%;
+  list-style: none;
+ }
+
+}

@@ -1,13 +1,14 @@
 @media only screen and (max-width: 849px){
   /* firstView */
-.l-business__firstView {
+.l-contact__firstView{
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-image: url(../../../images/kate-trysh-034iotpHHds-unsplash.jpg);
+  background-image: url(../../../images/airplane-paper-gc6f8bdd93_1920.jpg);
   background-repeat: no-repeat;
-  background-position: 60% 0%;
+  background-position: 50% 0%;
   background-size: cover;
+
 }
 
  /* header */
@@ -132,7 +133,7 @@
 }
 
 /* hero */
-.l-business__hero {
+.l-contact__hero {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -140,66 +141,142 @@
   text-align: center;
   color: #fff;
 }
-.l-business__Herotitle {
+.l-contact__Herotitle {
   font-size: 6vw;
 }
-.l-business__Herosubtitle {
+.l-contact__Herosubtitle {
   font-size: 5vw;
 }
 
-/* 事業内容 */
-.p-business__content {
+/* お問い合わせ */
+.p-contact__content {
   border: solid 3px #3AABD2;
   margin: 10% 5%;
   padding: 3%;
 }
-.p-business__desc {
-  padding: 3% 0;
+.p-contact__desc {
+  padding: 5% 0;
 }
-.p-business__feature {
+.p-contact__feature {
   text-align: center;
   border-bottom: #3AABD2 solid 2px;
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
 }
-.p-business__titile {
+.p-contact__titile {
+  font-size: 5vw;
+  margin-bottom: 1%;
+}
+.p-contact__Subtitle {
+  font-size: 3vw;
+  margin-bottom: 1%;
+}
+
+ /* hero */
+.l-contact__hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.l-contact__Herotitle {
+  font-size: 5vw;
+  color: #fff;
+}
+.l-contact__Herosubtitle {
+  font-size: 3vw;
+  color: #fff;
+}
+
+/* お問い合わせ */
+.p-contact__content {
+  border: solid 3px #3AABD2;
+  margin: 10% 5%;
+  padding: 3%;
+}
+.p-contact__desc {
+  padding: 2% 0;
+}
+.p-contact__feature {
+  text-align: center;
+  border-bottom: #3AABD2 solid 2px;
+  width: 40%;
+  margin: 0 auto;
+  color: #3AABD2;
+}
+.p-contact__titile {
   font-size: 2vw;
   margin-bottom: 1%;
 }
-.p-business__Subtitle {
+.p-contact__Subtitle {
   font-size: 1.5vw;
   margin-bottom: 1%;
 }
-.p-business__info {
-  text-align: center;
-}
-.p-business__text {
-  margin-top: 3%;
-  font-size: 1.5vw;
-}
-.p-business__summary {
-  padding: 3% 2%;
-  margin: 0 auto;
-}
-.p-business__list {
-  list-style: disc;
-  font-size: 1.5vw;
-}
-.p-business__Listtitle {
-  background-color: #3AABD2;
-  border-radius: 20px;
-  padding: 5%;
-  text-align: center;
-  color: #fff;
-  width: 50%;
-  margin: 0 auto;
-}
-.p-business__item {
-  margin: 8% auto;
-  width: 63%;
-}
 
+/* form */
+.p-contact__form {
+  margin: 5% 0;
+}
+.p-form {
+  width: 50vw;
+  margin: 0 auto;
+}
+.p-form__item {
+  font-size: 1vw;
+  padding: 20px 0;
+}
+.p-form__label {
+  margin-bottom: 1%;
+}
+.p-form__required {
+  display: inline-block;
+  text-align: center;
+  background: #cc1c0c;
+  color: #fff;
+  font-weight: 300;
+  width: 5vmax;
+  padding: 3px;
+  margin-left: 10px;
+}
+.p-form__datail {
+  font-size: 1vw;
+}
+.p-form__input {
+  width: 95%;
+  height: 5vmax;
+  border: solid 1px;
+}
+.p-form__error {
+  display: none;
+  margin-top: 5px;
+  color: #cc1c0c;
+}
+.p-form__input:invalid:focus + .p-form__error {
+  display: block;
+}
+.p-form__textarea {
+  border: 1px solid;
+  flex: 1;
+  width: 95%;
+  height: 30vmax;
+}
+.p-form__btn {
+  border: none;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #3AABD2;
+  color: #fff;
+  box-shadow: 0px 3px 4px #c0c0c0;
+  font-size: 1vw;
+  padding: 10px 0;
+  margin: 20px 0;
+  width: 95%;
+}
+.p-form__btn:hover {
+  opacity: 0.6;
+}
 
 /* footer */
  .l-footer {
