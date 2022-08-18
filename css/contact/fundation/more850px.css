@@ -111,6 +111,12 @@
 }
 .p-form__datail {
   font-size: 1vw;
+  color: #cc1c0c;
+}
+.p-form__example {
+  color: #3AABD2;
+  font-size: 1vw;
+  margin-left: 3%;
 }
 .p-form__input {
   width: 95%;
