@@ -28,12 +28,32 @@
  }
  .l-header__list {
    display: flex;
+   justify-content: space-between;
    font-size: 1.5vw;
    width: 50%;
    text-align: center;
    color: #3AABD2;
    text-shadow: #000 1px 0px;
    list-style: none;
+ }
+.l-header__listItem {
+   position: relative;
+   width: 20%;
+ }
+ .l-header__listItem::after {
+   position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+ }
+ .l-header__listItem:hover::after {
+   transform: scale(1,1);
  }
  .l-header__listItem img {
    width: 25%;
@@ -58,6 +78,24 @@
   color: #fff;
 }
 
+/* fadeUP Animation */
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+@keyframes fadeUpAnime {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* 代表挨拶 */
 .p-message__content {
   border: solid 3px #3AABD2;
@@ -69,11 +107,27 @@
 }
 .p-message__feature {
   text-align: center;
-  border-bottom: #3AABD2 solid 2px;
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
+  position: relative;
+  opacity: 0;
 }
+.p-message__feature::after {
+  position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #3AABD2;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+}
+ .p-message__feature:hover::after {
+   transform: scale(1,1);
+ }
 .p-message__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -88,11 +142,13 @@
 .p-message__text {
   font-size: 1.5vw;
   margin-top: 3%;
+  opacity: 0;
 }
 .p-message__represetative {
   text-align: center;
   font-size: 2vw;
   margin-top: 3%;
+  opacity: 0;
 }
 
 /* 会社概要 */
@@ -101,11 +157,27 @@
 }
 .p-profile__feature {
   text-align: center;
-  border-bottom: #3AABD2 solid 2px;
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
+  position: relative;
+  opacity: 0;
 }
+.p-profile__feature::after {
+  position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #3AABD2;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+}
+ .p-profile__feature:hover::after {
+   transform: scale(1,1);
+ }
 .p-profile__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -119,11 +191,12 @@
   margin: 0 auto;
   width: 80%;
 }
-.p-profile__group dl {
+.p-profile__list{
   display: flex;
   margin: 3% 0;
   align-items: center;
   background-color: #3AABD2;
+  opacity: 0;
 }
 .p-profile__summary {
   width: 50%;
@@ -148,11 +221,27 @@
 }
 .p-map__feature {
   text-align: center;
-  border-bottom: #3AABD2 solid 2px;
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
+  position: relative;
+  opacity: 0;
 }
+.p-map__feature::after {
+  position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #3AABD2;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+}
+ .p-map__feature:hover::after {
+   transform: scale(1,1);
+ }
 .p-map__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -165,6 +254,7 @@
   padding: 2% 0;
   margin: 0 auto;
   width: 80%;
+  opacity: 0;
 }
 .p-map__img {
   width: 100%;
@@ -176,11 +266,27 @@
 }
 .p-history__feature {
   text-align: center;
-  border-bottom: #3AABD2 solid 2px;
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
+  position: relative;
+  opacity: 0;
 }
+.p-history__feature::after {
+  position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #3AABD2;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+}
+ .p-history__feature:hover::after {
+   transform: scale(1,1);
+ }
 .p-history__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -194,11 +300,12 @@
   margin: 0 auto;
   width: 80%;
 }
-.p-history__group dl {
+.p-history__list {
   display: flex;
   margin: 3% 0;
   align-items: center;
   background-color: #3AABD2;
+  opacity: 0;
 }
 .p-history__summary {
   width: 50%;
@@ -219,7 +326,6 @@
 
  /* footer */
  .l-footer {
-   border-top: 1px solid #000000;
    text-align: center;
    color: #fff;
    font-size: 1.5vw;
@@ -234,5 +340,25 @@
    gap: 5%;
   list-style: none;
  }
-
+ .l-footer__listItem a {
+   position: relative;
+ }
+ .l-footer__listItem a::after {
+   position: absolute;
+   left: 0;
+   content: "";
+   width: 100%;
+   height: 2px;
+   background: #fff;
+   bottom: -10px;
+   transform: scale(0,1);
+   transform-origin: left top;
+   transition: transform 0.3s;
+ }
+ .l-footer__listItem a:hover {
+   opacity: 0.8;
+ }
+ .l-footer__listItem a:hover::after {
+   transform: scale(1,1);
+ }
 }

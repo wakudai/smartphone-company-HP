@@ -82,31 +82,31 @@
               <p class="p-profile__Subtitle">会社概要</p>
             </div>
             <div class="p-profile__group">
-              <dl>
+              <dl class="p-profile__list">
                 <dt class="p-profile__summary">会社名</dt>
                 <dd class="p-profile__detail">
                   <p class="p-profile__text">company name</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-profile__list">
                 <dt class="p-profile__summary">所在地</dt>
                 <dd class="p-profile__detail">
                   <p class="p-profile__text">東京都渋谷区○○123-4</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-profile__list">
                 <dt class="p-profile__summary">設立</dt>
                 <dd class="p-profile__detail">
                   <p class="p-profile__text">20XX年○○月○○日</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-profile__list">
                 <dt class="p-profile__summary">代表者</dt>
                 <dd class="p-profile__detail">
                   <p class="p-profile__text">代表取締役社長 山田 太郎</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-profile__list">
                 <dt class="p-profile__summary">主な取引先</dt>
                 <dd class="p-profile__detail">
                   <p class="p-profile__text">sample株式会社</p>
@@ -132,31 +132,31 @@
               <p class="p-history__Subtitle">沿革</p>
             </div>
             <div class="p-history__group">
-              <dl>
+              <dl class="p-history__list">
                 <dt class="p-history__summary">20XX年○○月</dt>
                 <dd class="p-history__detail">
                   <p class="p-history__text">テキストサンプルテキストサンプル</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-history__list">
                 <dt class="p-history__summary">20XX年○○月</dt>
                 <dd class="p-history__detail">
                   <p class="p-history__text">テキストサンプルテキストサンプル</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-history__list">
                 <dt class="p-history__summary">20XX年○○月</dt>
                 <dd class="p-history__detail">
                   <p class="p-history__text">テキストサンプルテキストサンプル</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-history__list">
                 <dt class="p-history__summary">20XX年○○月</dt>
                 <dd class="p-history__detail">
                   <p class="p-history__text">テキストサンプルテキストサンプル</p>
                 </dd>
               </dl>
-              <dl>
+              <dl class="p-history__list">
                 <dt class="p-history__summary">20XX年○○月</dt>
                 <dd class="p-history__detail">
                   <p class="p-history__text">テキストサンプルテキストサンプル</p>
@@ -186,6 +186,69 @@
   });
   $(".c-hamburger__menu--close").on('click', function(){
     $('.c-hamburger__menu').removeClass('is-active');
+  });
+
+  $(function () {
+    $(".l-message__hero").hide().fadeIn(4800);
+  });
+  
+  $(window).on("scroll",function () {
+    const wHeight = $(window).height();
+    const scrollAmount = $(window).scrollTop();
+    $(".p-message__feature").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-message__text").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-message__represetative").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-profile__feature").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-profile__list").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-map__feature").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-map").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-history__feature").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-history__list").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
   });
 
   }, false);
