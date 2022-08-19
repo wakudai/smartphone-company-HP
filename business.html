@@ -113,6 +113,33 @@
     $('.c-hamburger__menu').removeClass('is-active');
   });
 
+  $(function () {
+    $(".l-business__hero").hide().fadeIn(4800);
+  });
+
+  $(window).on("scroll",function () {
+    const wHeight = $(window).height();
+    const scrollAmount = $(window).scrollTop();
+    $(".p-business__feature").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-business__text").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+    $(".p-business__list").each(function () {
+      const targetPosition = $(this).offset().top;
+      if(scrollAmount > targetPosition - wHeight + 60) {
+        $(this).addClass("fadeUp");
+      }
+    })
+  });
+
   }, false);
 </script>
 </html>
