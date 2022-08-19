@@ -81,7 +81,7 @@
  justify-content: center;
  background: #3AABD2;
 }
-.c-hamburger__menuItem {
+.c-hamburger__menuItem{
  width: 100%;
  height: auto;
  font-weight: 900;
@@ -91,7 +91,7 @@
  margin-bottom: 7vh;
  list-style: none;
 }
-.c-hamburger__menuItem {
+.c-hamburger__menuItem a {
   position: relative;
 }
 .c-hamburger__menuItem a::after {
