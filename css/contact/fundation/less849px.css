@@ -170,31 +170,6 @@
   font-size: 5vw;
 }
 
-/* お問い合わせ */
-.p-contact__content {
-  border: solid 3px #3AABD2;
-  margin: 10% 5%;
-  padding: 3%;
-}
-.p-contact__desc {
-  padding: 5% 0;
-}
-.p-contact__feature {
-  text-align: center;
-  border-bottom: #3AABD2 solid 2px;
-  width: 40%;
-  margin: 0 auto;
-  color: #3AABD2;
-}
-.p-contact__titile {
-  font-size: 5vw;
-  margin-bottom: 1%;
-}
-.p-contact__Subtitle {
-  font-size: 3vw;
-  margin-bottom: 1%;
-}
-
  /* hero */
 .l-contact__hero {
   position: absolute;
@@ -204,11 +179,11 @@
   text-align: center;
 }
 .l-contact__Herotitle {
-  font-size: 5vw;
+  font-size: 6vw;
   color: #fff;
 }
 .l-contact__Herosubtitle {
-  font-size: 3vw;
+  font-size: 5vw;
   color: #fff;
 }
 
@@ -263,11 +238,11 @@
    transform: scale(1,1);
  }
 .p-contact__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-contact__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 
@@ -280,7 +255,7 @@
   margin: 0 auto;
 }
 .p-form__item {
-  font-size: 1vw;
+  font-size: 3.5vw;
   padding: 20px 0;
 }
 .p-form__label {
@@ -297,12 +272,12 @@
   margin-left: 10px;
 }
 .p-form__datail {
-  font-size: 1vw;
+  font-size: 3vw;
   color: #cc1c0c;
 }
 .p-form__example {
   color: #3AABD2;
-  font-size: 1vw;
+  font-size: 3vw;
   margin-left: 3%;
 }
 .p-form__input {
@@ -331,7 +306,7 @@
   background: #3AABD2;
   color: #fff;
   box-shadow: 0px 3px 4px #c0c0c0;
-  font-size: 1vw;
+  font-size: 3.5vw;
   padding: 10px 0;
   margin: 20px 0;
   width: 95%;
@@ -344,7 +319,7 @@
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 1.5vw;
+   font-size: 4vw;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
@@ -376,5 +351,8 @@
  }
  .l-footer__listItem a:hover::after {
    transform: scale(1,1);
+ }
+ .c-copyRight {
+   font-size: 4vw;
  }
 }
