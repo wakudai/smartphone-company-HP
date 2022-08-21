@@ -220,11 +220,11 @@
   transform: scale(1,1);
  }
 .p-message__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-message__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 .p-message__info {
@@ -232,12 +232,12 @@
 }
 .p-message__text {
   margin-top: 3%;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   opacity: 0;
 }
 .p-message__represetative {
   text-align: center;
-  font-size: 2vw;
+  font-size: 3.5vw;
   margin-top: 3%;
   opacity: 0;
 }
@@ -275,11 +275,11 @@
   transform: scale(1,1);
  }
 .p-profile__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-profile__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 .p-profile__group {
@@ -299,7 +299,7 @@
   padding: 2%;
   text-align: center;
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
 }
 .p-profile__detail {
   width: 60%;
@@ -308,7 +308,7 @@
   border: #3AABD2 solid 2px;
   padding: 2%;
   color: #3AABD2;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
 }
 
 /* MAP */
@@ -339,11 +339,11 @@
   transform: scale(1,1);
  }
 .p-map__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-map__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 .p-map {
@@ -389,11 +389,11 @@
   transform: scale(1,1);
  }
 .p-history__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-history__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 .p-history__group {
@@ -413,7 +413,7 @@
   padding: 2%;
   text-align: center;
   color: #fff;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
 }
 .p-history__detail {
   width: 60%;
@@ -422,14 +422,14 @@
   border: #3AABD2 solid 2px;
   padding: 2%;
   color: #3AABD2;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
 }
 
 /* footer */
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 1.5vw;
+   font-size: 4vw;;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
@@ -461,5 +461,8 @@
  }
  .l-footer__listItem a:hover::after {
    transform: scale(1,1);
+ }
+ .c-copyRight {
+   font-size: 4vw;
  }
 }
