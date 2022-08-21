@@ -220,11 +220,11 @@
    transform: scale(1,1);
  }
 .p-business__titile {
-  font-size: 2vw;
+  font-size: 4vw;
   margin-bottom: 1%;
 }
 .p-business__Subtitle {
-  font-size: 1.5vw;
+  font-size: 3.8vw;
   margin-bottom: 1%;
 }
 .p-business__info {
@@ -232,7 +232,7 @@
 }
 .p-business__text {
   margin-top: 3%;
-  font-size: 1.5vw;
+  font-size: 3.5vw;
   opacity: 0;
 }
 .p-business__summary {
@@ -241,7 +241,6 @@
 }
 .p-business__list {
   list-style: disc;
-  font-size: 1.5vw;
   opacity: 0;
 }
 .p-business__Listtitle {
@@ -252,17 +251,19 @@
   color: #fff;
   width: 50%;
   margin: 0 auto;
+  font-size: 3.8vw;
 }
 .p-business__item {
   margin: 8% auto;
   width: 63%;
+  font-size: 3.5vw;
 }
 
 /* footer */
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 1.5vw;
+   font-size: 4vw;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
@@ -294,5 +295,8 @@
  }
  .l-footer__listItem a:hover::after {
    transform: scale(1,1);
+ }
+ .c-copyRight {
+   font-size: 4vw;
  }
 }
