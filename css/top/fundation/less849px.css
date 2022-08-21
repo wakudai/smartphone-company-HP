@@ -196,7 +196,7 @@
 }
 .l-global__text {
   color: #3AABD2;
-  font-size: 1.5vw;
+  font-size: 4vw;
   text-align: center;
   margin: 20px 0;
 }
@@ -205,7 +205,7 @@
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 1.5vw;
+   font-size: 4vw;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
@@ -237,5 +237,8 @@
  }
  .l-footer__listItem a:hover::after {
    transform: scale(1,1);
+ }
+ .c-copyRight {
+   font-size: 4vw;
  }
 }
