@@ -34,7 +34,15 @@
 .l-header__listItem {
    position: relative;
    width: 20%;
-   text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
+ }
+ .l-header__listLink {
+   color: #3AABD2;
+ }
+ .item-active {
+   color: #fff;
+ }
+ .l-header__listLink:hover {
+   color: #fff;
  }
  .l-header__listItem::after {
    position: absolute;
@@ -54,7 +62,7 @@
  .l-header__listItem img {
    width: 25%;
    margin: 0 auto;
-   filter: drop-shadow(#000 3px 0px);
+   filter: drop-shadow(#000 1px 0px);
  }
 .l-hero {
   position: absolute;

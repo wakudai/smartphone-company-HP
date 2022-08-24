@@ -38,7 +38,15 @@
 .l-header__listItem {
    position: relative;
    width: 20%;
-   text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
+ }
+ .l-header__listLink {
+   color: #3AABD2;
+ }
+ .item-active {
+   color: #fff;
+ }
+ .l-header__listLink:hover {
+   color: #fff;
  }
  .l-header__listItem::after {
    position: absolute;
@@ -110,24 +118,9 @@
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-message__feature::after {
-  position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #3AABD2;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
-}
- .p-message__feature:hover::after {
-   transform: scale(1,1);
- }
 .p-message__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -160,24 +153,9 @@
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-profile__feature::after {
-  position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #3AABD2;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
-}
- .p-profile__feature:hover::after {
-   transform: scale(1,1);
- }
 .p-profile__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -224,24 +202,9 @@
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-map__feature::after {
-  position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #3AABD2;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
-}
- .p-map__feature:hover::after {
-   transform: scale(1,1);
- }
 .p-map__titile {
   font-size: 2vw;
   margin-bottom: 1%;
@@ -269,24 +232,9 @@
   width: 40%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-history__feature::after {
-  position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #3AABD2;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
-}
- .p-history__feature:hover::after {
-   transform: scale(1,1);
- }
 .p-history__titile {
   font-size: 2vw;
   margin-bottom: 1%;

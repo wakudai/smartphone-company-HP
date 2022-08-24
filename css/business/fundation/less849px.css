@@ -198,27 +198,12 @@
 }
 .p-business__feature {
   text-align: center;
-  width: 40%;
+  width: 100%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: solid #3AABD2 1px;
 }
-.p-business__feature::after {
-  position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #3AABD2;
-   bottom: -3px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
-}
- .p-business__feature:hover::after {
-   transform: scale(1,1);
- }
 .p-business__titile {
   font-size: 4vw;
   margin-bottom: 1%;

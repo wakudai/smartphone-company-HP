@@ -198,27 +198,12 @@
 }
 .p-message__feature {
   text-align: center;
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-message__feature::after {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #3AABD2;
-  bottom: -3px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-.p-message__feature:hover::after {
-  transform: scale(1,1);
- }
 .p-message__titile {
   font-size: 4vw;
   margin-bottom: 1%;
@@ -253,27 +238,12 @@
 }
 .p-profile__feature {
   text-align: center;
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-profile__feature::after {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #3AABD2;
-  bottom: -3px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-.p-profile__feature:hover::after {
-  transform: scale(1,1);
- }
 .p-profile__titile {
   font-size: 4vw;
   margin-bottom: 1%;
@@ -317,27 +287,12 @@
 }
 .p-map__feature {
   text-align: center;
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   color: #3AABD2;
-  position: relative;
   opacity: 0;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-map__feature::after {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #3AABD2;
-  bottom: -3px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-.p-map__feature:hover::after {
-  transform: scale(1,1);
- }
 .p-map__titile {
   font-size: 4vw;
   margin-bottom: 1%;
@@ -367,27 +322,12 @@
 }
 .p-history__feature {
   text-align: center;
-  width: 40%;
+  width: 90%;
   margin: 0 auto;
   color: #3AABD2;
   opacity: 0;
-  position: relative;
+  border-bottom: #3AABD2 solid 1px;
 }
-.p-history__feature::after {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #3AABD2;
-  bottom: -3px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
-.p-history__feature:hover::after {
-  transform: scale(1,1);
- }
 .p-history__titile {
   font-size: 4vw;
   margin-bottom: 1%;
