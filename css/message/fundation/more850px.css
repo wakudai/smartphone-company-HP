@@ -80,6 +80,7 @@
 .l-message__Herotitle {
   font-size: 5vw;
   color: #fff;
+  text-shadow: 0 1px #bbb, 1px 2px #bbb, 2px 3px #bbb, 3px 4px #bbb, 4px 5px #bbb, 5px 10px 8px #000;
 }
 .l-message__Herosubtitle {
   font-size: 3vw;
