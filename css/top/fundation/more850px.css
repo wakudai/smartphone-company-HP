@@ -12,20 +12,25 @@
 
  .l-header {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
    align-items: center;
-   padding: 20px;
+   padding: 50px;
+   height: 70px;
+   background-color: rgb(125 125 125 / 25%);
+   font-family: 'Aboreto', cursive;
  }
  .l-header__title {
-   font-size: 4vw;
+   font-size: 36px;
    width: 50%;
    color: #3AABD2;
    text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
  }
  .l-header__list {
    display: flex;
-   justify-content: space-between;
-   font-size: 1.5vw;
+   justify-content: end;
+   gap: 20px;
+   font-size: 16px;
+   font-weight: bold;
    width: 50%;
    text-align: center;
    color: #3AABD2;
@@ -33,31 +38,18 @@
  }
 .l-header__listItem {
    position: relative;
-   width: 20%;
+   width: 15%;
  }
  .l-header__listLink {
-   color: #3AABD2;
+   color: #000;
  }
  .item-active {
    color: #fff;
+   border-bottom: 1px solid #fff;
  }
  .l-header__listLink:hover {
    color: #fff;
- }
- .l-header__listItem::after {
-   position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #fff;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
- }
- .l-header__listItem:hover::after {
-   transform: scale(1,1);
+   border-bottom: 1px solid #fff;
  }
  .l-header__listItem img {
    width: 25%;
@@ -70,18 +62,23 @@
   left: 10%;
 }
 .l-hero__title {
-  font-size: 5vw;
+  font-size: 56px;
   color: #fff;
   text-shadow: 0 1px #bbb, 1px 2px #bbb, 2px 3px #bbb, 3px 4px #bbb, 4px 5px #bbb, 5px 10px 8px #000;
+  font-family: 'Aboreto', cursive;
 }
 
 /* main */
 .p-global {
   width: 100vw;
-  margin: 10% 0;
+  padding: 10% 0;
   display: flex;
   justify-content: center;
   gap: 40px;
+  background-image: url(../../../images/background-img__white.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .fadeUp {
   animation-name: fadeUpAnime;
@@ -100,7 +97,37 @@
   }
 }
 .p-global__content {
+  width: 30%;
+  height: 30vmax;
   border: solid 3px #3AABD2;
+  opacity: 0;
+  background-image: url(../../../images/kate-trysh-034iotpHHds-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0;
+}
+.p-global__content:nth-child(2) {
+  width: 30%;
+  height: 30vmax;
+  border: solid 3px #3AABD2;
+  opacity: 0;
+  background-image: url(../../../images/samson-ZGjbiukp_-A-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+}
+.p-global__content:nth-child(3) {
+  width: 30%;
+  height: 30vmax;
+  border: solid 3px #3AABD2;
+  opacity: 0;
+  background-image: url(../../../images/airplane-paper-gc6f8bdd93_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   opacity: 0;
 }
 .fadeUp:nth-child(2) {
@@ -109,30 +136,37 @@
 .fadeUp:nth-child(3) {
   animation-delay: 1s;
 }
-.p-global__img {
-  width: 25vmax;
-  height: 25vmax;
-}
-.p-global__icon {
-  width: 10vmax;
-  height: 10vmax;
-  margin: 20px auto;
-}
-.l-global__text {
-  color: #3AABD2;
-  font-size: 1.5vw;
+.p-global__textBox {
+  background-color: rgb(125 125 125 / 50%);
+  width: 100%;
+  height: 7vmax;
   text-align: center;
-  margin: 20px 0;
+  margin: 77% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p-global__text {
+  color: #fff;
+  font-size: 14px;
+  width: 30%;
+  margin: 0 auto 4px auto;
+}
+.p-global__btn {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 50px;
+  font-size: 14px;
 }
 
  /* footer */
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 1.5vw;
-   font-weight: 700;
+   font-size: 16px;
    padding-bottom: 15px;
    background-color: #3AABD2;
+   font-family: 'Aboreto', cursive;
  }
  .l-footer__list {
    display: flex;
@@ -150,14 +184,9 @@
    content: "";
    width: 100%;
    height: 2px;
-   background: #fff;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
  }
  .l-footer__listItem a:hover {
-   opacity: 0.8;
+   border-bottom: solid 1px #fff;
  }
  .l-footer__listItem a:hover::after {
    transform: scale(1,1);

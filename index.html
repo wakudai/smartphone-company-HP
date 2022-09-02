@@ -11,6 +11,10 @@
   <link rel="icon" href="./images/事業内容.png">
   <link rel="stylesheet" href="css/top/app.css">
   <link rel="stylesheet" href="css/vegas.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Noto+Sans+JP&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
   <script src="js/vegas.min.js" defer></script>
 </head>
@@ -18,12 +22,12 @@
   <div class="l-wrapper">
     <div class="l-firstView" id="js-firstView">
       <header class="l-header">
-        <h3 class="l-header__title">COMPANY LOGO</h3>
+        <h3 class="l-header__title"><a href="index.html">COMPANY LOGO</a></h3>
         <ul class="l-header__list">
           <li class="l-header__listItem"><a href="index.html" class="l-header__listLink item-active"><img src="./images/TOP.png" alt="TOP">TOP</a></li>
-          <li class="l-header__listItem"><a href="business.html" class="l-header__listLink"><img src="./images/事業内容.png" alt="事業内容">事業内容</a></li>
-          <li class="l-header__listItem"><a href="message.html" class="l-header__listLink"><img src="./images/会社概要.png" alt="会社概要">会社概要</a></li>
-          <li class="l-header__listItem"><a href="contact.html" class="l-header__listLink"><img src="./images/お問い合わせ.png" alt="お問い合わせ">お問い合わせ</a></li>
+          <li class="l-header__listItem"><a href="business.html" class="l-header__listLink"><img src="./images/事業内容.png" alt="事業内容">BUSINESS</a></li>
+          <li class="l-header__listItem"><a href="message.html" class="l-header__listLink"><img src="./images/会社概要.png" alt="会社概要">ABOUT</a></li>
+          <li class="l-header__listItem"><a href="contact.html" class="l-header__listLink"><img src="./images/お問い合わせ.png" alt="お問い合わせ">CONTACT</a></li>
         </ul>
         <div class="c-hamburger">
           <span class="c-hamburger__toggle">
@@ -32,10 +36,10 @@
             <i></i>
           </span>
           <ul class="c-hamburger__menu">
-            <li class="c-hamburger__menuItem"><a href="index.html">TOP</a></li>
-            <li class="c-hamburger__menuItem"><a href="business.html">事業内容</a></li>
-            <li class="c-hamburger__menuItem"><a href="message.html">会社概要</a></li>
-            <li class="c-hamburger__menuItem"><a href="contact.html">お問い合わせ</a></li>
+            <li class="c-hamburger__menuItem"><a href="index.html" class="item-active">TOP</a></li>
+            <li class="c-hamburger__menuItem"><a href="business.html">BUSINESS</a></li>
+            <li class="c-hamburger__menuItem"><a href="message.html">ABOUT</a></li>
+            <li class="c-hamburger__menuItem"><a href="contact.html">CONTACT</a></li>
             <li class="c-hamburger__menu--close"></li>
           </ul>
         </div>
@@ -47,36 +51,33 @@
     <section>
       <main>
         <div class="p-global">
-          <dl class="p-global__content">
-            <a href="business.html">
-              <dt><img src="./images/kate-trysh-034iotpHHds-unsplash.jpg" alt="事業内容" class="p-global__img"></dt>
-              <dd><img src="./images/事業内容.png" alt="事業内容" class="p-global__icon"></dd>
-              <dd><p class="l-global__text">事業内容</p></dd>
-            </a>
-          </dl>
-          <dl class="p-global__content">
-            <a href="message.html">
-              <dt><img src="./images/samson-ZGjbiukp_-A-unsplash.jpg" alt="会社概要" class="p-global__img"></dt>
-              <dd><img src="./images/会社概要.png" alt="会社概要" class="p-global__icon"></dd>
-              <dd><p class="l-global__text">会社概要</p></dd>
-            </a>
-          </dl>
-          <dl class="p-global__content">
-            <a href="contact.html">
-              <dt><img src="./images/airplane-paper-gc6f8bdd93_1920.jpg" alt="お問い合わせ" class="p-global__img"></dt>
-              <dd><img src="./images/お問い合わせ.png" alt="お問い合わせ" class="p-global__icon"></dd>
-              <dd><p class="l-global__text">お問い合わせ</p></dd>
-            </a>
-          </dl>
+          <div class="p-global__content">
+            <div class="p-global__textBox">
+              <p class="p-global__text">事業内容</p>
+              <button type="button" class="p-global__btn"><a href="business.html">Check!!</a></button>
+            </div>
+          </div>
+          <div class="p-global__content">
+            <div class="p-global__textBox">
+              <p class="p-global__text">会社概要</p>
+              <button type="button" class="p-global__btn"><a href="message.html">Check!!</a></button>
+            </div>
+          </div>
+          <div class="p-global__content">
+            <div class="p-global__textBox">
+              <p class="p-global__text">お問い合わせ</p>
+              <button type="button" class="p-global__btn"><a href="contact.html">Check!!</a></button>
+            </div>
+          </div>
         </div>
       </main>
     </section>
     <footer class="l-footer">
       <ul class="l-footer__list">
-        <li class="l-footer__listItem"><a href="index.html">TOP</a></li>
-        <li class="l-footer__listItem"><a href="business.html">事業内容</a></li>
-        <li class="l-footer__listItem"><a href="message.html">会社概要</a></li>
-        <li class="l-footer__listItem"><a href="contact.html">お問い合わせ</a></li>
+        <li class="l-footer__listItem"><a href="index.html" class="item-active">TOP</a></li>
+        <li class="l-footer__listItem"><a href="business.html">BUSINESS</a></li>
+        <li class="l-footer__listItem"><a href="message.html">ABOUT</a></li>
+        <li class="l-footer__listItem"><a href="contact.html">CONTACT</a></li>
       </ul>
       <small class="c-copyRight">&copy; company name 2022</small>
     </footer>
@@ -106,7 +107,8 @@
       });
 
   $(function () {
-    $(".l-hero__title").hide().fadeIn(4800);
+    $(".l-header").hide().fadeIn(4800);
+    $(".l-hero").hide().fadeIn(4800);
   });
 
 

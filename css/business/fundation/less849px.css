@@ -17,23 +17,21 @@
 .l-header__logo {
   width: 45%;
 }
-
 .l-header {
  display: flex;
  justify-content: space-between;
  padding: 10px;
 }
 .l-header__title {
-  font-size: 4vw;
-  width: 50%;
+  font-size: 24px;
   color: #3AABD2;
   text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
   align-items: center;
+  font-family: 'Aboreto', cursive;
 }
 .c-hamburger {
  display: flex;
  align-items: center;
- padding-right: 15px;
 }
 .c-hamburger__toggle {
  display: block;
@@ -42,13 +40,13 @@
  height: 25px;
 }
 .c-hamburger__toggle i {
- display: block;
- width: 100%;
- height: 3px;
- background-color: #3AABD2;
- position: absolute;
- transition: transform .5s, opacity .5s;
-}
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  transition: transform .5s, opacity .5s;
+ }
 .c-hamburger__toggle i:nth-child(1) {
  top: 0;
 }
@@ -67,77 +65,58 @@
 /*----------------------------
 * メニュー本体
 *----------------------------*/
+.item-active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 .c-hamburger__menu{
- position: fixed;
- top: 0;
- right: 0;
- z-index: 1;
- width: 100vw;
- height: 100vh;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- background: #3AABD2;
-}
-.c-hamburger__menuItem{
- width: 100%;
- height: auto;
- font-weight: 900;
- text-align: center;
- color: #fff;
- font-size: 4vw;
- margin-bottom: 7vh;
- list-style: none;
-}
-.c-hamburger__menuItem a {
-  position: relative;
-}
-.c-hamburger__menuItem a::after {
-  position: absolute;
-  left: 0;
-  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #3AABD2;
+  font-family: 'Aboreto', cursive;
+ }
+ .c-hamburger__menuItem{
   width: 100%;
-  height: 2px;
-  background: #fff;
-  bottom: -10px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
- .c-hamburger__menuItem a:hover {
-  opacity: 0.8;
-}
-.c-hamburger__menuItem a:hover::after {
-  transform: scale(1,1);
-}
+  height: auto;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 7vh;
+  list-style: none;
+ }
 .c-hamburger__menu--close {
- display: block;
- position: relative;
- width: 15vw;
- height: 15vw;
- border: 5px solid #ffffff; /* 枠の調整 */
- border-radius: 50%;  /* 丸みの度合い */
- background: #3AABD2; /* ボタンの背景色 */
-}
-
-.c-hamburger__menu--close::before, .c-hamburger__menu--close::after {
- content: "";
- position: absolute;
- top: 50%;
- left: 50%;
- width: 5px; /* 棒の幅（太さ） */
- height: 15vw; /* 棒の高さ */
- background: #ffffff; /* バツ印の色 */
-}
-
-.c-hamburger__menu--close::before {
- transform: translate(-50%,-50%) rotate(45deg);
-}
-
-.c-hamburger__menu--close::after {
- transform: translate(-50%,-50%) rotate(-45deg);
-}
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffffff; /* 枠の調整 */
+  border-radius: 30%;  /* 丸みの度合い */
+  background: #3AABD2; /* ボタンの背景色 */
+ }
+ .c-hamburger__menu--close::before, .c-hamburger__menu--close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px; /* 棒の幅（太さ） */
+  height: 5vw; /* 棒の高さ */
+  background: #ffffff; /* バツ印の色 */
+ }
+ .c-hamburger__menu--close::before {
+  transform: translate(-50%,-50%) rotate(45deg);
+ }
+ .c-hamburger__menu--close::after {
+  transform: translate(-50%,-50%) rotate(-45deg);
+ }
 
 /*----------------------------
 * アニメーション部分
@@ -163,11 +142,13 @@
   color: #fff;
 }
 .l-business__Herotitle {
-  font-size: 6vw;
+  font-size: 24px;
+  font-family: 'Aboreto', cursive;
   text-shadow: 0 1px #bbb, 1px 2px #bbb, 2px 3px #bbb, 3px 4px #bbb, 4px 5px #bbb, 5px 10px 8px #000;
 }
 .l-business__Herosubtitle {
-  font-size: 5vw;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 /* fadeUP Animation */
@@ -189,10 +170,16 @@
 }
 
 /* 事業内容 */
+.l-business {
+  background-image: url(../../../images/background-img__white.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+}
 .p-business__content {
   border: solid 3px #3AABD2;
-  margin: 10% 5%;
   padding: 3%;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .p-business__desc {
   padding: 3% 0;
@@ -206,19 +193,19 @@
   border-bottom: solid #3AABD2 1px;
 }
 .p-business__titile {
-  font-size: 4vw;
+  font-size: 16px;
   margin-bottom: 1%;
 }
 .p-business__Subtitle {
-  font-size: 3.8vw;
+  font-size: 15px;
   margin-bottom: 1%;
 }
 .p-business__info {
   text-align: center;
 }
 .p-business__text {
-  margin-top: 3%;
-  font-size: 3.5vw;
+  margin: 8%;
+  font-size: 13px;
   opacity: 0;
 }
 .p-business__summary {
@@ -232,27 +219,28 @@
 .p-business__Listtitle {
   background-color: #3AABD2;
   border-radius: 20px;
-  padding: 5%;
+  padding: 5px;
   text-align: center;
   color: #fff;
   width: 50%;
   margin: 0 auto;
-  font-size: 3.8vw;
+  font-size: 15px;
 }
 .p-business__item {
   margin: 8% auto;
   width: 63%;
-  font-size: 3.5vw;
+  font-size: 13px;
 }
 
 /* footer */
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 4vw;
+   font-size: 14px;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
+   font-family: 'Aboreto', cursive;
  }
  .l-footer__list {
    display: flex;
@@ -260,29 +248,5 @@
    justify-content: center;
    gap: 5%;
    list-style: none;
- }
-  .l-footer__listItem a {
-   position: relative;
- }
- .l-footer__listItem a::after {
-   position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #fff;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
- }
- .l-footer__listItem a:hover {
-   opacity: 0.8;
- }
- .l-footer__listItem a:hover::after {
-   transform: scale(1,1);
- }
- .c-copyRight {
-   font-size: 4vw;
  }
 }

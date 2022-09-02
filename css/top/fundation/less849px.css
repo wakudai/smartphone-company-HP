@@ -20,16 +20,15 @@
  padding: 10px;
 }
 .l-header__title {
-  font-size: 4vw;
-  width: 50%;
+  font-size: 24px;
   color: #3AABD2;
   text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
   align-items: center;
+  font-family: 'Aboreto', cursive;
 }
 .c-hamburger {
  display: flex;
  align-items: center;
- padding-right: 15px;
 }
 .c-hamburger__toggle {
  display: block;
@@ -41,7 +40,7 @@
  display: block;
  width: 100%;
  height: 3px;
- background-color: #3AABD2;
+ background-color: #fff;
  position: absolute;
  transition: transform .5s, opacity .5s;
 }
@@ -60,6 +59,10 @@
 /*----------------------------
 * メニュー本体
 *----------------------------*/
+.item-active {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
 .c-hamburger__menu{
  position: fixed;
  top: 0;
@@ -72,6 +75,7 @@
  align-items: center;
  justify-content: center;
  background: #3AABD2;
+ font-family: 'Aboreto', cursive;
 }
 .c-hamburger__menuItem{
  width: 100%;
@@ -79,55 +83,31 @@
  font-weight: 900;
  text-align: center;
  color: #fff;
- font-size: 4vw;
+ font-size: 14px;
  margin-bottom: 7vh;
  list-style: none;
-}
-.c-hamburger__menuItem a {
-  position: relative;
-}
-.c-hamburger__menuItem a::after {
-  position: absolute;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  bottom: -10px;
-  transform: scale(0,1);
-  transform-origin: left top;
-  transition: transform 0.3s;
-}
- .c-hamburger__menuItem a:hover {
-  opacity: 0.8;
-}
-.c-hamburger__menuItem a:hover::after {
-  transform: scale(1,1);
 }
 .c-hamburger__menu--close {
  display: block;
  position: relative;
- width: 15vw;
- height: 15vw;
- border: 5px solid #ffffff; /* 枠の調整 */
- border-radius: 50%;  /* 丸みの度合い */
+ width: 50px;
+ height: 50px;
+ border: 2px solid #ffffff; /* 枠の調整 */
+ border-radius: 30%;  /* 丸みの度合い */
  background: #3AABD2; /* ボタンの背景色 */
 }
-
 .c-hamburger__menu--close::before, .c-hamburger__menu--close::after {
  content: "";
  position: absolute;
  top: 50%;
  left: 50%;
- width: 5px; /* 棒の幅（太さ） */
- height: 15vw; /* 棒の高さ */
+ width: 2px; /* 棒の幅（太さ） */
+ height: 5vw; /* 棒の高さ */
  background: #ffffff; /* バツ印の色 */
 }
-
 .c-hamburger__menu--close::before {
  transform: translate(-50%,-50%) rotate(45deg);
 }
-
 .c-hamburger__menu--close::after {
  transform: translate(-50%,-50%) rotate(-45deg);
 }
@@ -155,15 +135,17 @@
   text-align: center;
 }
 .l-hero__title {
-  font-size: 6vw;
+  font-size: 24px;
+  font-family: 'Aboreto', cursive;
   color: #fff;
   text-shadow: 0 1px #bbb, 1px 2px #bbb, 2px 3px #bbb, 3px 4px #bbb, 4px 5px #bbb, 5px 10px 8px #000;
 }
 
 /* main */
 .p-global {
+  background-image: url(../../../images/background-img__white.jpeg);
   width: 100vw;
-  margin: 10% 0;
+  padding: 10% 0;
 }
 .fadeUp {
   animation-name: fadeUpAnime;
@@ -182,34 +164,76 @@
   }
 }
 .p-global__content {
+  background-image: url(../../../images/kate-trysh-034iotpHHds-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   border: solid 3px #3AABD2;
-  margin: 5% 10%;
+  width: 80%;
+  height: 50vmax;
+  margin: 20px auto;
   opacity: 0;
 }
-.p-global__img {
-  width: 100%;
-  height: 40vmax;
-}
-.p-global__icon {
-  width: 10vmax;
-  height: 10vmax;
+.p-global__content:nth-child(2) {
+  background-image: url(../../../images/samson-ZGjbiukp_-A-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 3px #3AABD2;
+  width: 80%;
+  height: 50vmax;
   margin: 20px auto;
+  opacity: 0;
 }
-.l-global__text {
-  color: #3AABD2;
-  font-size: 4vw;
+.p-global__content:nth-child(3) {
+  background-image: url(../../../images/airplane-paper-gc6f8bdd93_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: solid 3px #3AABD2;
+  width: 80%;
+  height: 50vmax;
+  margin: 20px auto;
+  opacity: 0;
+}
+.fadeUp:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.fadeUp:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.p-global__textBox {
+  background-color: rgb(125 125 125 / 50%);
+  width: 100%;
+  height: 10vmax;
   text-align: center;
-  margin: 20px 0;
+  margin: 89.5% auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.p-global__text {
+  color: #fff;
+  font-size: 14px;
+  width: 30%;
+  margin: 0 auto 4px auto;
+}
+.p-global__btn {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 50px;
+  font-size: 14px;
 }
 
 /* footer */
  .l-footer {
    text-align: center;
    color: #fff;
-   font-size: 4vw;
+   font-size: 14px;
    font-weight: 700;
    padding-bottom: 15px;
    background-color: #3AABD2;
+   font-family: 'Aboreto', cursive;
  }
  .l-footer__list {
    display: flex;
@@ -217,29 +241,5 @@
    justify-content: center;
    gap: 5%;
    list-style: none;
- }
-  .l-footer__listItem a {
-   position: relative;
- }
- .l-footer__listItem a::after {
-   position: absolute;
-   left: 0;
-   content: "";
-   width: 100%;
-   height: 2px;
-   background: #fff;
-   bottom: -10px;
-   transform: scale(0,1);
-   transform-origin: left top;
-   transition: transform 0.3s;
- }
- .l-footer__listItem a:hover {
-   opacity: 0.8;
- }
- .l-footer__listItem a:hover::after {
-   transform: scale(1,1);
- }
- .c-copyRight {
-   font-size: 4vw;
  }
 }
