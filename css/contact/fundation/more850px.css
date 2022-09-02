@@ -166,6 +166,7 @@
   width: 95%;
   height: 70px;
   border: solid 1px;
+  padding-left: 20px;
 }
 .p-form__error {
   display: none;
@@ -180,6 +181,8 @@
   flex: 1;
   width: 95%;
   height: 30vmax;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 .p-form__btn {
   border: none;
